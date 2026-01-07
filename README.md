@@ -17,17 +17,17 @@ nix build
 # in your flake.nix
 inputs = {
   # your other inputs
-  lise.url = "github:ewtodd/LISEplusplus-nix";
+  lisepp.url = "github:ewtodd/LISEplusplus-nix";
 };
 # ...
 <!---->
 # in your configuration.nix
 { inputs, ... }:
 let
-  lise = inputs.lise.packages."x86_64-linux".default;
+  lisepp = inputs.lisepp.packages."x86_64-linux".default;
 in {
   # ...
-  environment.systemPackages = [ lise ];
+  environment.systemPackages = [ lisepp ];
   # ...
 }
 ```

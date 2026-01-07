@@ -1,5 +1,5 @@
 {
-  description = "A very basic flake";
+  description = "LISE++ flake";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
@@ -12,11 +12,11 @@
       system:
       let
         pkgs = import nixpkgs { inherit system; };
-        lise = pkgs.callPackage ./default.nix { };
+        lisepp = pkgs.callPackage ./default.nix { };
       in
       {
         packages = {
-          default = lise;
+          default = lisepp;
         };
       }
     );
