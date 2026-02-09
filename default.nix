@@ -19,11 +19,11 @@
 
 stdenv.mkDerivation rec {
   name = "lise-app";
-  version = "17.17.20";
+  version = "18.0.0";
 
   src = fetchurl {
-    url = "https://lise.frib.msu.edu/download/Linux/lise-app_v17.17.20-2_all.deb";
-    sha256 = "sha256-9sCqhXOqOvQ7rxsBlNHtZ8bnHhjuMaVmyPUEEoL1omI=";
+    url = "https://lise.frib.msu.edu/download/Linux/lise-app_v18.0.0-1_all.deb";
+    sha256 = "sha256-HICMJPOEBl0oah5USDH/kE77Z60vf6aWYjxiTova4Uc=";
   };
 
   nativeBuildInputs = [
